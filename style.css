@@ -1,0 +1,152 @@
+:root {
+    --height: 70px;
+}
+
+
+/* body {
+    background: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+.ticket-box {
+    background: #EFF4FD;
+    border-radius: 3px;
+    padding: 9px 18px;
+    margin: 0 0 20px 0;
+}
+
+.ticket {
+    width: 120px;
+    height: var(--height);
+    line-height: 70px;
+    position: relative;
+    transition: all 300ms cubic-bezier(0.03, 0.98, 0.53, 0.99) 0s;
+    border-radius: 10px;
+}
+
+.ticket-blue {
+    background: #0068C8;
+    border-radius: 10px;
+}
+
+.ticket-orange {
+    background: #ED671B;
+}
+
+.ticket:before,
+.ticket:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #EFF4FD;
+}
+
+.ml-22 {
+    margin-left: 22px;
+}
+
+.ticket:before {
+    border: 5px solid #EFF4FD;
+    left: -3px;
+    clip-path: circle(20% at 0 50%);
+}
+
+.ticket:after {
+    border: 5px solid #EFF4FD;
+    right: -3px;
+    clip-path: circle(20% at 100% 50%);
+}
+
+.ticket-content-wrapper-blue {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #0068C8;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+.ticket-content-wrapper-orange {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #ed671b;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+.ticket-left {
+    width: 30%;
+    border-right: 4px dashed white;
+    background: #4c95d9;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display: block;
+    margin-top: -1px;
+    margin-left: -1px;
+    height: 65px;
+}
+
+.background-ticket-left-blue {
+    background: #4c95d9;
+}
+
+.background-ticket-left-orange {
+    background: #f2955f;
+}
+
+.ticket-right {
+    width: 70%;
+    height: var(--height);
+}
+
+.background-ticket-right-blue {
+    background: #0053a0;
+}
+
+.background-ticket-right-orange {
+    background: #ED671B;
+}
+
+.background-ticket-right-text-blue {
+    background: #0f5da6;
+}
+
+.background-ticket-right-text-orange {
+    background: #be5216;
+}
+
+.ticket-right .ticket-right-box-text {
+    /* padding: 2px; */
+    margin: 7px 8px;
+    line-height: 0;
+    border-radius: 2px;
+}
+
+.ticket-right .ticket-right-box-text p {
+    padding: 5px 8px 3px;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+.ticket-right .ticket-right-box-number p {
+    padding: 1px 8px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 150%;
+    margin: 0;
+    color: white;
+}
